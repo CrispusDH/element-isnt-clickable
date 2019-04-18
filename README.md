@@ -8,7 +8,7 @@ Check case when `scrollIntoView` works not the same as `click`
 
 1. Install dependencies `npm i` in the root folder
 2. Install dependencies in `/e2e-ui` folder `npm i`
-3. Start test App in the root folder `npm run test`
+3. Start test App in the root folder `npm run start`
 
 #### Steps to reproduce
 
