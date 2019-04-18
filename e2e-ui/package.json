@@ -13,12 +13,12 @@
     "@wdio/spec-reporter": "5.7.9"
   },
   "scripts": {
-    "pretest": "npm run clean && npm run tsc",
-    "posttest": "npm run clean",
-    "test": "mode=browser ./node_modules/.bin/wdio wdio.conf.js",
-    "pretest:emulation": "npm run clean && npm run tsc",
-    "posttest:emulation": "npm run clean",
-    "test:emulation": "mode=emulation ./node_modules/.bin/wdio wdio.conf.emulation.js",
+    "test:click": "mode=browser ./node_modules/.bin/wdio wdio.conf.click.js",
+    "test:scrollIntoView": "mode=emulation ./node_modules/.bin/wdio wdio.conf.scrollIntoView.js",
+    "pretest:click": "npm run clean && npm run tsc",
+    "posttest:click": "npm run clean",
+    "pretest:scrollIntoView": "npm run clean && npm run tsc",
+    "posttest:scrollIntoView": "npm run clean",
     "clean": "rm -rf dist",
     "tsc": "tsc"
   },

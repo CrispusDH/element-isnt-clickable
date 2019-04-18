@@ -1,12 +1,17 @@
 exports.config = {
   runner: 'local',
   specs: [
-    './dist/**/*.js'
+    './dist/click.js'
   ],
   maxInstances: 1,
   capabilities: [{
     maxInstances: 1,
-    browserName: 'chrome'
+    browserName: 'chrome',
+    'goog:chromeOptions': {
+      args: [
+        '--window-size=1366,768',
+      ],
+    }
   }],
   reporters: ['spec'],
   logLevel: 'error',

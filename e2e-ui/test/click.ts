@@ -5,8 +5,5 @@ describe('Check is scroll for click is the same as for scrollIntoView', () => {
     await new Promise(resolve => setTimeout(resolve, 2000));
     await button.click();
     await new Promise(resolve => setTimeout(resolve, 2000));
-    // await button.scrollIntoView();
-    // await button.click();
-    // await new Promise(resolve => setTimeout(resolve, 2000));
   })
 });
